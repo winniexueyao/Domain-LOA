@@ -34,11 +34,11 @@ if __name__ == '__main__':
   window_size = 10
   # HDFS
   if args.dataset == 'hd':
-    # struct_log = './data/HDFS/HDFS_100k.log_structured.csv' # The structured log file
+    # struct_log = '/data/HDFS/HDFS_100k.log_structured.csv' # The structured log file
     # label_file = './data/HDFS/HDFS_100k.log_anomaly_label.csv' # The anomaly label file
 
-    struct_log = './data/HDFS/HDFS.log_structured.csv' # The structured log file
-    label_file = './data/HDFS/HDFS.log_anomaly_label.csv' # The anomaly label file
+    struct_log = '/content/Domain-LOA/data/HDFS/HDFS.log_structured.csv' # The structured log file
+    label_file = '/content/Domain-LOA/data/HDFS/HDFS.log_anomaly_label.csv' # The anomaly label file
 
     (x_train, window_y_train, y_train), (x_test, window_y_test, y_test) = \
     dataloader.load_HDFS(struct_log, label_file=label_file, window='session',
