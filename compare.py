@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
   # BGL
   elif args.dataset == 'bgl':
-    struct_log = './data/BGL/BGL_100k.log_structured.csv' # The structured log file
+    struct_log = '/content/Domain-LOA/data/BGL/BGL_100k.log_structured.csv' # The structured log file
 
     (x_train, window_y_train, y_train), (x_test, window_y_test, y_test) = \
     dataloader.load_BGL(struct_log, window_size=window_size, train_ratio=train_ratio, split_type='sequential')
